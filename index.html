@@ -21,7 +21,7 @@
     font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 90px}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 70px}
   .hero{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
   .hero img.icon{width:76px;height:76px;border-radius:18px;flex:none;
     box-shadow:0 1px 0 rgba(0,0,0,.05), 0 10px 24px rgba(0,0,0,.09)}
@@ -42,17 +42,14 @@
   li{margin:6px 0}
   .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:18px 0}
   .card h3{margin-top:0}
-  footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);
-    font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  .nav{margin-top:22px}
+  .nav{margin-top:24px}
   .nav a{margin-right:16px;font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
     letter-spacing:.12em;text-transform:uppercase}
   .nav a.active{color:var(--muted);text-decoration:none}
-  .store{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;
-    text-decoration:none;border-radius:12px;padding:10px 18px;margin-top:24px}
-  .store small{display:block;font-size:10px;letter-spacing:.03em;opacity:.85}
-  .store strong{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em;margin-top:1px}
-  .store:hover{opacity:.85}
+  .store-wrap{margin-top:56px;padding-top:34px;border-top:1px solid var(--line);text-align:center}
+  .store-wrap img{height:52px;width:auto;display:inline-block;margin:6px}
+  footer{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);
+    font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -66,13 +63,6 @@
       <p class="tagline" style="margin:12px 0 0">Find the order. Clear the shape.</p>
     </div>
   </div>
-
-  <!-- Yayınlandıktan sonra href'e gerçek App Store linkini koy ve
-       Apple'ın resmi rozet görselini kullan:
-       https://developer.apple.com/app-store/marketing/guidelines/ -->
-  <a class="store" href="#" aria-label="Download on the App Store">
-    <span><small>Download on the</small><strong>App Store</strong></span>
-  </a>
 
   <div class="nav">
     <a class="active" href="index.html">Support</a>
@@ -112,8 +102,16 @@
   <p>ExitLine tek kişilik bir bulmaca oyunudur. Oynamak için hesap açmanıza gerek yoktur.</p>
   <p><strong>Reklamlar devam ediyorsa:</strong> “Remove Ads” satın aldıysanız oyun içi <strong>Settings › Restore Purchases</strong> adımını kullanın; satın alımı yaptığınız Apple ID ile giriş yapmış olduğunuzdan emin olun.</p>
   <p><strong>İlerlemem kayboldu:</strong> Uygulamayı silip yeniden kurduğunuzda ilerleme normalde kaybolur. Bunu önlemek için Ayarlar’daki <strong>Save Progress with Apple</strong> seçeneğini kullanabilirsiniz; ilerlemeniz Apple ID’nize bağlanır ve yeniden kurulumda geri gelir.</p>
+  <p><strong>Bir bölümde takıldım:</strong> Oyun çubuğundaki ipucu düğmesi, şu anda çıkabilecek bir çizgiyi bulur ve kamerayı oraya götürür. İpuçları ödüllü reklam izleyerek de alınabilir.</p>
   <p><strong>Verilerimi silmek istiyorum:</strong> Ayarlar’daki <strong>Delete My Data</strong> seçeneği ilerlemenizi ve Apple ID bağlantınızı kalıcı olarak siler — bize yazmanıza gerek yok.</p>
   <p><strong>İletişim:</strong> <a href="mailto:dursunaras@gmail.com">dursunaras@gmail.com</a> · <a href="privacy-policy.html">Gizlilik Politikası</a></p>
+
+  <!-- Yayınlandıktan sonra href'e gerçek App Store linkini koy -->
+  <div class="store-wrap">
+    <a href="#" aria-label="Download ExitLine on the App Store">
+      <img src="app-store-badge.png" alt="Download on the App Store">
+    </a>
+  </div>
 
   <footer>
     <span>© 2026 Dursun Aras · ExitLine</span>
