@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ExitLine — Privacy Policy</title>
-<meta name="description" content="Privacy policy for the ExitLine puzzle game: no account, no personal data, local progress, AdMob advertising.">
+<meta name="description" content="Privacy policy for the ExitLine puzzle game: what data the app touches, who processes it, and how to delete it.">
+<link rel="icon" type="image/png" href="exitline-icon.png">
+<link rel="apple-touch-icon" href="exitline-icon.png">
 <style>
   :root{
     --paper:#F2F0EB; --card:#F8F7F3; --ink:#242424;
@@ -20,41 +22,76 @@
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:760px;margin:0 auto;padding:56px 22px 90px}
-  .brand{font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.34em;color:var(--muted);text-transform:uppercase}
-  h1{font-size:40px;letter-spacing:-.02em;margin:14px 0 8px}
-  h2{font-size:24px;letter-spacing:-.01em;margin:44px 0 12px;padding-top:26px;border-top:1px solid var(--line)}
+  .hero{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .hero img.icon{width:76px;height:76px;border-radius:18px;flex:none;
+    box-shadow:0 1px 0 rgba(0,0,0,.05), 0 10px 24px rgba(0,0,0,.09)}
+  .wordmark{height:36px;width:auto;display:block}
+  .wordmark.dark{display:none}
+  @media (prefers-color-scheme: dark){
+    .wordmark.light{display:none}
+    .wordmark.dark{display:block}
+  }
+  h1{font-size:38px;letter-spacing:-.02em;margin:30px 0 6px}
+  h2{font-size:22px;letter-spacing:-.01em;margin:44px 0 12px;padding-top:26px;border-top:1px solid var(--line)}
   h3{font-size:16px;margin:26px 0 6px}
-  .meta{font:12px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+  .tagline{color:var(--muted);font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em}
+  p,li,td,th{color:var(--ink)}
+  .muted{color:var(--muted)}
   a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
   ul{padding-left:20px}
   li{margin:6px 0}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:22px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:18px 0}
   .card h3{margin-top:0}
-  .muted{color:var(--muted)}
-  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+  .meta{font:12px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;
+    color:var(--muted);text-transform:uppercase}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
   th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{font:600 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-  .backlink{display:inline-block;margin-top:10px;font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}
+  th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);
+    font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .nav{margin-top:22px}
+  .nav a{margin-right:16px;font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+    letter-spacing:.12em;text-transform:uppercase}
+  .nav a.active{color:var(--muted);text-decoration:none}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="brand">ExitLine</div>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 15 September 2026</p>
-  <a class="backlink" href="./">← Support</a>
+  <div class="hero">
+    <img class="icon" src="exitline-icon.png" alt="ExitLine app icon">
+    <div>
+      <img class="wordmark light" src="exitlogo.png" alt="ExitLine">
+      <img class="wordmark dark" src="exitlogo-dark.png" alt="ExitLine">
+      <p class="tagline" style="margin:12px 0 0">Find the order. Clear the shape.</p>
+    </div>
+  </div>
 
-  <p>ExitLine (“the app”) is published by <strong>[Dursun Aras]</strong> (“we”, “us”). This policy explains what data the app touches, who processes it, and what your options are. It applies to the ExitLine app on the Apple App Store.</p>
+  <div class="nav">
+    <a href="index.html">Support</a>
+    <a class="active" href="privacy-policy.html">Privacy</a>
+    <a href="#turkce">Türkçe</a>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 17 September 2026</p>
+
+  <p>ExitLine (“the app”) is published by <strong>Dursun Aras</strong> (“we”, “us”). This policy explains what data the app touches, who processes it, and what your options are. It applies to the ExitLine app on the Apple App Store.</p>
 
   <div class="card">
     <h3>The short version</h3>
-    <p>No account. No sign-up. We do not ask for or collect your name, e-mail, phone number or location. Your game progress stays on your device. The free version shows ads through Google AdMob, which processes technical device data to serve them. Purchases are handled entirely by Apple.</p>
+    <ul>
+      <li>You can play the whole game without an account and without giving us any personal information.</li>
+      <li>Your progress is stored on your device. It only leaves the device if you choose <strong>Save Progress with Apple</strong>, which backs it up so a reinstall can restore it.</li>
+      <li>The free version shows ads through Google AdMob, which processes technical device data to serve them.</li>
+      <li>Purchases are handled entirely by Apple.</li>
+      <li>You can erase everything yourself, in the app, with <strong>Settings › Delete My Data</strong>.</li>
+    </ul>
   </div>
 
   <h2>1. Information we collect</h2>
-  <p><strong>We collect no personal information about you.</strong> The app has no account system, no login, no contact form and no profile. We do not track you across apps or websites, and we do not build a profile of you.</p>
+  <p>Playing requires no account, no sign-up and no personal information. We do not ask for your name, e-mail address, phone number or location in order to play, we do not track you across other apps or websites, and we do not build an advertising profile of you.</p>
+  <p>The only case in which we hold data about you is if you deliberately turn on the optional progress backup described in section 3.</p>
 
   <h2>2. Data stored on your device</h2>
   <p>The app saves the following locally, on the device itself:</p>
@@ -64,9 +101,23 @@
     <li>Daily hint and eraser counts</li>
     <li>Whether the “Remove Ads” purchase is active on this device</li>
   </ul>
-  <p>This data never leaves the device, is not sent to us, and is not readable by us. Deleting the app deletes it. Because it is not backed up to an account, we cannot restore it for you.</p>
+  <p>Deleting the app deletes this local copy.</p>
 
-  <h2>3. Advertising</h2>
+  <h2>3. Optional: Save Progress with Apple</h2>
+  <p>Because deleting the app also deletes your progress, Settings offers an optional backup called <strong>Save Progress with Apple</strong>. It is off until you tap it. If you use it:</p>
+  <ul>
+    <li>The app asks Apple to confirm your identity through <strong>Sign in with Apple</strong>. Apple lets you choose whether to share your name with us or hide it; we do not require it, and we do not ask for your e-mail address.</li>
+    <li>Your progress — completed levels, best moves and best times — is then also stored in our cloud database, operated with <strong>Google Firebase Authentication</strong> and <strong>Cloud Firestore</strong> (Google Ireland Limited / Google LLC acting as our processor), tied to an identifier derived from that Apple ID.</li>
+    <li>This exists for one purpose only: giving your own progress back to you after a reinstall or on a new device. We do not sell it, share it, or use it to contact or profile you.</li>
+    <li>It is not a social account: there is no public profile, no friends list and no leaderboard tied to it.</li>
+  </ul>
+  <p>If you never use this option, no progress data ever leaves your device.</p>
+
+  <h2>4. Deleting your data</h2>
+  <p>Open <strong>Settings</strong> in the game and tap <strong>Delete My Data</strong>. This immediately and permanently erases your cloud-stored progress, the Apple ID link and the local save on that device. No request to us is required and there is nothing left for us to hold afterwards.</p>
+  <p>You can also revoke the app's access from your Apple ID at any time under <em>iOS Settings › [your name] › Sign in with Apple</em>.</p>
+
+  <h2>5. Advertising</h2>
   <p>The free version of the app displays ads supplied by <strong>Google AdMob</strong> (Google Ireland Limited / Google LLC), which acts as an independent controller of the data it collects. To deliver, cap and measure ads, Google may process:</p>
   <table>
     <tr><th>Data</th><th>Purpose</th></tr>
@@ -75,55 +126,42 @@
     <tr><td>Device model, OS version, app version</td><td>Ad compatibility and rendering</td></tr>
     <tr><td>Ad interactions (views, taps, rewarded-ad completions)</td><td>Measurement and billing</td></tr>
   </table>
-  <p>We do not receive this data in a form that identifies you. How Google uses it is described here: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+  <p>We do not receive this data in a form that identifies you. The app requests non-personalised ads and does not ask for App Tracking Transparency permission. How Google uses this data is described at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
 
   <h3>Your choices</h3>
-  <ul>
-    <li>On iOS you can turn off app tracking under <em>Settings › Privacy &amp; Security › Tracking</em>, and limit Apple’s own ad personalisation under <em>Settings › Privacy &amp; Security › Apple Advertising</em>.</li>
-    <li>The one-time <strong>Remove Ads</strong> purchase removes the ads shown between levels.</li>
-    <li>Rewarded ads (for extra hints) are always optional — nothing in the game is locked behind watching one.</li>
-  </ul>
+  <p>On iOS you can turn off app tracking under <em>Settings › Privacy &amp; Security › Tracking</em>, and limit Apple's own ad personalisation under <em>Settings › Privacy &amp; Security › Apple Advertising</em>. The one-time <strong>Remove Ads</strong> purchase removes the ads shown between levels. Rewarded ads (for extra hints) are always optional — nothing in the game is locked behind watching one.</p>
 
-  <h2>4. Purchases</h2>
-  <p>“Remove Ads” is a one-time, non-consumable in-app purchase. The entire payment is processed by Apple through the App Store; <strong>we never see your card details, billing address or Apple ID</strong>. The app only learns from Apple whether the purchase is currently active, so it can stop showing ads. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+  <h2>6. Purchases</h2>
+  <p>“Remove Ads” is a one-time, non-consumable in-app purchase. The entire payment is handled by Apple; we never see your payment details, card number or billing address. The app only learns whether the purchase is active on your Apple ID.</p>
 
-  <h2>5. Analytics and crash reporting</h2>
-  <p>The app bundles Google Firebase libraries (Analytics and Crashlytics), but data collection for both is <strong>disabled</strong>: no analytics events and no crash reports are transmitted. If a future version enables them, this policy will be updated before that version is released, and the change will be noted with a new date at the top of this page.</p>
-
-  <h2>6. Data sharing</h2>
-  <p>We do not sell, rent or share personal data, because we do not hold any. The only third parties involved are Google (advertising, as described above) and Apple (app distribution and payments), each under their own privacy policies:</p>
-  <ul>
-    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-    <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
-  </ul>
-
-  <h2>7. Data retention</h2>
-  <p>We retain nothing, because nothing reaches our servers — the app has no server of its own. Data held on your device is kept until you delete the app. Retention of advertising data is determined by Google.</p>
+  <h2>7. Analytics and crash reporting</h2>
+  <p>The app includes Google Firebase libraries. Analytics and crash collection are <strong>switched off</strong>, and no analytics events or crash reports are sent. Firebase Authentication and Cloud Firestore are used only for the optional progress backup described in section 3, and Firebase Remote Config is used to adjust ad pacing settings. If this changes in a future version, this policy will be updated before that version is released.</p>
 
   <h2>8. Children</h2>
-  <p>ExitLine is not directed at children under 13 and we do not knowingly collect personal information from them. If you believe a child has provided personal information through a third-party ad, contact us and we will help you raise it with the provider.</p>
+  <p>ExitLine is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
 
   <h2>9. Your rights</h2>
-  <p>Under the GDPR, KVKK and similar laws you have rights of access, correction, deletion and objection. As we hold no personal data about you, there is nothing on our side to export, correct or erase. For data processed by Google for advertising, use the Google links above, or write to us and we will point you to the right process.</p>
+  <p>If you have never used Save Progress with Apple, we hold no personal data about you, so there is nothing on our side to export or delete. If you have used it, you can delete all of it yourself at any time via <strong>Settings › Delete My Data</strong>, or write to us and we will do it for you. Depending on where you live, you may also have rights of access, correction, portability and objection under laws such as the GDPR or KVKK — write to us and we will respond.</p>
+  <p>For requests about advertising data held by Google, use the Google link in section 5.</p>
 
-  <h2>10. International use</h2>
-  <p>The app can be used anywhere the App Store operates. Any processing by Google or Apple may take place in countries other than your own, under the safeguards described in their policies.</p>
+  <h2>10. Changes</h2>
+  <p>If this policy changes, the updated version is published on this page with a new date at the top.</p>
 
-  <h2>11. Changes to this policy</h2>
-  <p>Any update is published on this page with a new “Last updated” date. Material changes will also be described in the App Store release notes of the version they apply to.</p>
+  <h2>11. Contact</h2>
+  <p><strong><a href="mailto:dursunaras@gmail.com">dursunaras@gmail.com</a></strong></p>
 
-  <h2>12. Contact</h2>
-  <p><strong><a href="mailto:[dursunaras@gmail.com]">[E-POSTA]</a></strong><br>
-  <span class="muted">[Dursun Aras]</span></p>
-
-  <h2>Türkçe Özet</h2>
-  <p>ExitLine hesap açmayı gerektirmez; adınızı, e-postanızı, telefonunuzu veya konumunuzu istemez ve toplamaz. Tamamladığınız bölümler, ayarlarınız ve günlük ipucu haklarınız yalnızca cihazınızda saklanır, bize ulaşmaz; uygulamayı sildiğinizde bu veriler de silinir.</p>
-  <p>Ücretsiz sürümde <strong>Google AdMob</strong> reklam gösterir. Google; reklam kimliği, IP adresi, cihaz modeli, işletim sistemi sürümü ve reklam etkileşimleri gibi teknik verileri reklamı sunmak, sıklığını sınırlamak ve ölçmek için işleyebilir. Bu veriler bize sizi tanımlayacak biçimde ulaşmaz. Ayrıntı: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google’ın ilgili sayfası</a>. iOS’ta <em>Ayarlar › Gizlilik ve Güvenlik › İzleme</em> bölümünden izlemeyi kapatabilir, oyun içindeki tek seferlik <strong>Remove Ads</strong> satın alımıyla bölüm aralarındaki reklamları kaldırabilirsiniz.</p>
-  <p>Ödemeler tamamen Apple tarafından yürütülür; kart bilgilerinizi görmeyiz, uygulama yalnızca satın alımın aktif olup olmadığını öğrenir. Firebase analitik ve çökme raporlaması uygulamada <strong>kapalıdır</strong>; hiçbir olay veya çökme raporu gönderilmez.</p>
-  <p>KVKK kapsamındaki talepleriniz için: <a href="mailto:[dursunaras@gmail.com]">[E-POSTA]</a>. Hakkınızda kişisel veri tutmadığımız için silinecek ya da aktarılacak bir kaydımız bulunmuyor.</p>
+  <h2 id="turkce">Türkçe Özet</h2>
+  <p>Bu, aşağıdaki İngilizce metnin resmi olmayan özetidir; bağlayıcı metin yukarıdaki İngilizce sürümdür.</p>
+  <p><strong>Hesap gerekmez.</strong> Oyunu oynamak için ad, e-posta, telefon veya konum bilginizi istemiyoruz; sizi diğer uygulamalarda takip etmiyoruz.</p>
+  <p><strong>İlerlemeniz cihazınızda saklanır.</strong> Yalnızca Ayarlar’daki isteğe bağlı <strong>Save Progress with Apple</strong> seçeneğini kullanırsanız, ilerlemeniz Apple ID’nize bağlı olarak bulutta (Google Firebase) da yedeklenir — amacı yalnızca uygulamayı silip yeniden kurduğunuzda ilerlemenizi size geri vermektir. Bu özelliği kullanmazsanız hiçbir ilerleme verisi cihazınızdan çıkmaz.</p>
+  <p><strong>Silme:</strong> Ayarlar’daki <strong>Delete My Data</strong> seçeneği buluttaki kaydınızı, Apple ID bağlantınızı ve cihazdaki kaydı anında ve kalıcı olarak siler. Bize yazmanıza gerek yoktur.</p>
+  <p><strong>Reklamlar:</strong> Ücretsiz sürümde Google AdMob üzerinden reklam gösterilir. Google; reklam kimliği, IP adresi, cihaz modeli ve işletim sistemi sürümü gibi teknik verileri işleyebilir. Bu veriler bize sizi tanımlayacak şekilde ulaşmaz ve uygulama kişiselleştirilmemiş reklam ister. Tek seferlik <strong>Remove Ads</strong> satın alımı bölüm aralarındaki reklamları kaldırır; ipucu için izlenen ödüllü reklamlar her zaman isteğe bağlıdır.</p>
+  <p><strong>Ödemeler</strong> tamamen Apple tarafından yürütülür; kart bilgilerinizi görmeyiz. Firebase analitik ve çökme raporlaması <strong>kapalıdır</strong>.</p>
+  <p><strong>İletişim:</strong> <a href="mailto:dursunaras@gmail.com">dursunaras@gmail.com</a></p>
 
   <footer>
-    © 2026 [Dursun Aras] · ExitLine · <a href="./">privacy-policy.html</a>
+    <span>© 2026 Dursun Aras · ExitLine</span>
+    <span><a href="index.html">Support</a></span>
   </footer>
 
 </div>
