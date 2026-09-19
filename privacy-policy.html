@@ -74,7 +74,7 @@
   </div>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 17 September 2026</p>
+  <p class="meta">Last updated: 19 September 2026</p>
 
   <p>ExitLine (“the app”) is published by <strong>Dursun Aras</strong> (“we”, “us”). This policy explains what data the app touches, who processes it, and what your options are. It applies to the ExitLine app on the Apple App Store.</p>
 
@@ -82,7 +82,8 @@
     <h3>The short version</h3>
     <ul>
       <li>You can play the whole game without an account and without giving us any personal information.</li>
-      <li>Your progress is stored on your device. It only leaves the device if you choose <strong>Save Progress with Apple</strong>, which backs it up so a reinstall can restore it.</li>
+      <li>Your progress is stored on your device and backed up to our cloud under an anonymous identifier that is not tied to you, so a reinstall does not have to cost you your levels.</li>
+      <li><strong>Save Progress with Apple</strong> is optional: it links that backup to your Apple ID so you can recover it on another device.</li>
       <li>The free version shows ads through Google AdMob, which processes technical device data to serve them.</li>
       <li>Purchases are handled entirely by Apple.</li>
       <li>You can erase everything yourself, in the app, with <strong>Settings › Delete My Data</strong>.</li>
@@ -91,7 +92,7 @@
 
   <h2>1. Information we collect</h2>
   <p>Playing requires no account, no sign-up and no personal information. We do not ask for your name, e-mail address, phone number or location in order to play, we do not track you across other apps or websites, and we do not build an advertising profile of you.</p>
-  <p>The only case in which we hold data about you is if you deliberately turn on the optional progress backup described in section 3.</p>
+  <p>What we do hold is the game save described in section 3: your completed levels and best results, kept under an anonymous identifier so they survive a reinstall. It contains nothing that identifies you as a person unless you choose to link it to your Apple ID.</p>
 
   <h2>2. Data stored on your device</h2>
   <p>The app saves the following locally, on the device itself:</p>
@@ -103,15 +104,18 @@
   </ul>
   <p>Deleting the app deletes this local copy.</p>
 
-  <h2>3. Optional: Save Progress with Apple</h2>
-  <p>Because deleting the app also deletes your progress, Settings offers an optional backup called <strong>Save Progress with Apple</strong>. It is off until you tap it. If you use it:</p>
+  <h2>3. Your game save in the cloud</h2>
+  <p>From the first launch, the app keeps a copy of your game save in our cloud database, operated with <strong>Google Firebase Authentication</strong> and <strong>Cloud Firestore</strong> (Google Ireland Limited / Google LLC acting as our processor). It holds:</p>
   <ul>
-    <li>The app asks Apple to confirm your identity through <strong>Sign in with Apple</strong>. Apple lets you choose whether to share your name with us or hide it; we do not require it, and we do not ask for your e-mail address.</li>
-    <li>Your progress — completed levels, best moves and best times — is then also stored in our cloud database, operated with <strong>Google Firebase Authentication</strong> and <strong>Cloud Firestore</strong> (Google Ireland Limited / Google LLC acting as our processor), tied to an identifier derived from that Apple ID.</li>
-    <li>This exists for one purpose only: giving your own progress back to you after a reinstall or on a new device. We do not sell it, share it, or use it to contact or profile you.</li>
-    <li>It is not a social account: there is no public profile, no friends list and no leaderboard tied to it.</li>
+    <li>An anonymous account identifier created by Firebase. It is not your Apple ID, not an e-mail address, and cannot be traced back to you by us.</li>
+    <li>A randomly generated installation identifier, used to tell two installs apart when merging saves.</li>
+    <li>A display name the app makes up for the save (for example “Oyuncu 4821”). It is invented by the app, never taken from your Apple ID.</li>
+    <li>Your progress: completed levels, best moves and best times.</li>
   </ul>
-  <p>If you never use this option, no progress data ever leaves your device.</p>
+  <p>This exists for one purpose: giving your own progress back to you. We do not sell it, share it, or use it to contact or profile you. It is not a social account — there is no public profile, no friends list and no leaderboard.</p>
+
+  <h3>Optional: Save Progress with Apple</h3>
+  <p>Because the anonymous identifier is created fresh on a new install, that copy alone cannot be matched to you after a reinstall. Settings therefore offers <strong>Save Progress with Apple</strong>, which is off until you tap it. If you use it, the app asks Apple to confirm your identity through <strong>Sign in with Apple</strong> and links the existing save to your Apple ID, so it can be restored on a reinstall or on another device. Apple lets you choose whether to share your name; we do not store it in our database, we do not ask for your e-mail address, and we never receive your Apple ID password.</p>
 
   <h2>4. Deleting your data</h2>
   <p>Open <strong>Settings</strong> in the game and tap <strong>Delete My Data</strong>. This immediately and permanently erases your cloud-stored progress, the Apple ID link and the local save on that device. No request to us is required and there is nothing left for us to hold afterwards.</p>
@@ -135,13 +139,13 @@
   <p>“Remove Ads” is a one-time, non-consumable in-app purchase. The entire payment is handled by Apple; we never see your payment details, card number or billing address. The app only learns whether the purchase is active on your Apple ID.</p>
 
   <h2>7. Analytics and crash reporting</h2>
-  <p>The app includes Google Firebase libraries. Analytics and crash collection are <strong>switched off</strong>, and no analytics events or crash reports are sent. Firebase Authentication and Cloud Firestore are used only for the optional progress backup described in section 3, and Firebase Remote Config is used to adjust ad pacing settings. If this changes in a future version, this policy will be updated before that version is released.</p>
+  <p>The app includes Google Firebase libraries. Analytics and crash collection are <strong>switched off</strong>, and no analytics events or crash reports are sent. Firebase Authentication and Cloud Firestore are used only for the game save described in section 3, and Firebase Remote Config is used to adjust ad pacing settings. If this changes in a future version, this policy will be updated before that version is released.</p>
 
   <h2>8. Children</h2>
   <p>ExitLine is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
 
   <h2>9. Your rights</h2>
-  <p>If you have never used Save Progress with Apple, we hold no personal data about you, so there is nothing on our side to export or delete. If you have used it, you can delete all of it yourself at any time via <strong>Settings › Delete My Data</strong>, or write to us and we will do it for you. Depending on where you live, you may also have rights of access, correction, portability and objection under laws such as the GDPR or KVKK — write to us and we will respond.</p>
+  <p>You can delete everything we hold yourself, at any time, via <strong>Settings › Delete My Data</strong> — or write to us and we will do it for you. Without a Sign in with Apple link we have no way to connect a save to a person, so we cannot look one up on request; the in-app button, which acts on your own device's account, is the reliable route. Depending on where you live, you may also have rights of access, correction, portability and objection under laws such as the GDPR or KVKK — write to us and we will respond.</p>
   <p>For requests about advertising data held by Google, use the Google link in section 5.</p>
 
   <h2>10. Changes</h2>
@@ -153,7 +157,8 @@
   <h2 id="turkce">Türkçe Özet</h2>
   <p>Bu, aşağıdaki İngilizce metnin resmi olmayan özetidir; bağlayıcı metin yukarıdaki İngilizce sürümdür.</p>
   <p><strong>Hesap gerekmez.</strong> Oyunu oynamak için ad, e-posta, telefon veya konum bilginizi istemiyoruz; sizi diğer uygulamalarda takip etmiyoruz.</p>
-  <p><strong>İlerlemeniz cihazınızda saklanır.</strong> Yalnızca Ayarlar’daki isteğe bağlı <strong>Save Progress with Apple</strong> seçeneğini kullanırsanız, ilerlemeniz Apple ID’nize bağlı olarak bulutta (Google Firebase) da yedeklenir — amacı yalnızca uygulamayı silip yeniden kurduğunuzda ilerlemenizi size geri vermektir. Bu özelliği kullanmazsanız hiçbir ilerleme verisi cihazınızdan çıkmaz.</p>
+  <p><strong>İlerlemeniz cihazınızda saklanır ve buluta da yedeklenir.</strong> İlk açılıştan itibaren oyun kaydınız (tamamladığınız bölümler ve dereceleriniz) Google Firebase üzerinde, sizinle ilişkilendirilemeyen anonim bir kimlikle tutulur. Bulutta ayrıca rastgele bir kurulum kimliği ve uygulamanın kendi ürettiği bir görünen ad (örn. “Oyuncu 4821”) bulunur; e-posta veya gerçek adınız bulunmaz.</p>
+  <p><strong>Save Progress with Apple isteğe bağlıdır.</strong> Anonim kimlik yeni kurulumda sıfırdan oluştuğu için o kayıt tek başına size geri verilemez. Bu seçeneğe dokunduğunuzda kaydınız Apple ID’nize bağlanır ve yeniden kurulumda ya da başka bir cihazda geri gelir. Apple şifrenizi görmeyiz, e-posta adresinizi istemeyiz.</p>
   <p><strong>Silme:</strong> Ayarlar’daki <strong>Delete My Data</strong> seçeneği buluttaki kaydınızı, Apple ID bağlantınızı ve cihazdaki kaydı anında ve kalıcı olarak siler. Bize yazmanıza gerek yoktur.</p>
   <p><strong>Reklamlar:</strong> Ücretsiz sürümde Google AdMob üzerinden reklam gösterilir. Google; reklam kimliği, IP adresi, cihaz modeli ve işletim sistemi sürümü gibi teknik verileri işleyebilir. Bu veriler bize sizi tanımlayacak şekilde ulaşmaz ve uygulama kişiselleştirilmemiş reklam ister. Tek seferlik <strong>Remove Ads</strong> satın alımı bölüm aralarındaki reklamları kaldırır; ipucu için izlenen ödüllü reklamlar her zaman isteğe bağlıdır.</p>
   <p><strong>Ödemeler</strong> tamamen Apple tarafından yürütülür; kart bilgilerinizi görmeyiz. Firebase analitik ve çökme raporlaması <strong>kapalıdır</strong>.</p>
