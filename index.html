@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ExitLine — Support</title>
-<meta name="description" content="Support and help for ExitLine, a single-player line puzzle game for iPhone and iPad.">
+<title>ExitLine — Find the order. Clear the shape.</title>
+<meta name="description" content="ExitLine is a line puzzle game for iPhone and iPad: 1000 hand-built levels across five worlds, each board a silhouette drawn out of arrows.">
 <link rel="icon" type="image/png" href="exitline-icon.png">
 <link rel="apple-touch-icon" href="exitline-icon.png">
 <style>
@@ -21,7 +21,7 @@
     font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 70px}
+  .wrap{max-width:880px;margin:0 auto;padding:56px 22px 70px}
   .hero{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
   .hero img.icon{width:76px;height:76px;border-radius:18px;flex:none;
     box-shadow:0 1px 0 rgba(0,0,0,.05), 0 10px 24px rgba(0,0,0,.09)}
@@ -31,24 +31,34 @@
     .wordmark.light{display:none}
     .wordmark.dark{display:block}
   }
-  h1{font-size:38px;letter-spacing:-.02em;margin:30px 0 6px}
-  h2{font-size:24px;letter-spacing:-.01em;margin:44px 0 12px;padding-top:26px;border-top:1px solid var(--line)}
-  h3{font-size:16px;margin:26px 0 6px}
   .tagline{color:var(--muted);font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em}
-  p,li{color:var(--ink)}
-  .muted{color:var(--muted)}
-  a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
-  ul{padding-left:20px}
-  li{margin:6px 0}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:18px 0}
-  .card h3{margin-top:0}
   .nav{margin-top:24px}
   .nav a{margin-right:16px;font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
     letter-spacing:.12em;text-transform:uppercase}
   .nav a.active{color:var(--muted);text-decoration:none}
-  .store-wrap{margin-top:56px;padding-top:34px;border-top:1px solid var(--line);text-align:center}
-  .store-wrap img{height:52px;width:auto;display:inline-block;margin:6px}
-  footer{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);
+  h1{font-size:40px;letter-spacing:-.025em;line-height:1.12;margin:42px 0 14px;max-width:16ch}
+  h2{font-size:24px;letter-spacing:-.01em;margin:52px 0 12px;padding-top:26px;border-top:1px solid var(--line)}
+  .lede{font-size:18px;max-width:58ch}
+  p,li{color:var(--ink)}
+  .muted{color:var(--muted)}
+  a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+  .shots{display:flex;gap:18px;margin:34px 0 10px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+  .shots figure{margin:0;flex:none;width:232px;scroll-snap-align:start}
+  .shots img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:20px;
+    background:var(--card)}
+  .shots figcaption{margin-top:10px;color:var(--muted);
+    font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .store-wrap{margin-top:34px}
+  .store-wrap img{height:52px;width:auto;display:inline-block}
+  .worlds{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;padding:0;list-style:none}
+  .worlds li{border:1px solid var(--line);border-radius:999px;padding:7px 16px;
+    font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted)}
+  footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);
     font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </style>
 </head>
@@ -65,57 +75,72 @@
   </div>
 
   <div class="nav">
-    <a class="active" href="index.html">Support</a>
+    <a class="active" href="index.html">Home</a>
+    <a href="support.html">Support</a>
     <a href="privacy-policy.html">Privacy</a>
     <a href="#turkce">Türkçe</a>
   </div>
 
-  <h1>Support</h1>
-  <p>ExitLine is a single-player puzzle game. Every level is a silhouette drawn out of arrow lines; you tap the lines in the order that lets each one leave the board.</p>
+  <h1>A thousand puzzles, each one a picture.</h1>
+  <p class="lede">Every level is a silhouette drawn out of arrows — a rocket, a whale, a pine tree, a thunderbolt. Each line wants to leave the board, but only one direction is open to it, and something is always in the way.</p>
 
-  <div class="card">
-    <h3>Contact</h3>
-    <p>Questions, bug reports, refund or purchase problems — write to us and we answer within a few business days.</p>
-    <p><strong><a href="mailto:dursunaras@gmail.com">dursunaras@gmail.com</a></strong></p>
-    <p class="muted">When reporting a problem, please include your device model, iOS version and the level number.</p>
-  </div>
-
-  <h3>I bought “Remove Ads” but ads are still showing</h3>
-  <p>Open <strong>Settings</strong> in the game (gear icon, top right) and tap <strong>Restore Purchases</strong>. Make sure you are signed in with the Apple ID used for the purchase. Remove Ads is a one-time, non-consumable purchase — it never expires and it is not a subscription.</p>
-
-  <h3>I lost my progress after deleting and reinstalling the app</h3>
-  <p>The app keeps a cloud copy of your save, but under an anonymous identifier that is created fresh on every install — so after a reinstall there is nothing we can match it to. To protect against that, Settings offers <strong>Save Progress with Apple</strong>: it ties your save to your Apple ID — no separate account, nothing else changes. Reinstall, tap the same option, and your progress comes back. Without it, we have no way to identify which save was yours.</p>
-
-  <h3>Do I need an internet connection?</h3>
-  <p>Levels play fully offline. A connection is used to load ads, to complete a purchase, and to keep your game save backed up. Linking that backup to your Apple ID is optional and only happens if you tap Save Progress with Apple.</p>
-
-  <h3>I am stuck on a level</h3>
-  <p>Use the hint button in the game bar: it finds a line that can leave right now, brings the camera to it and dims everything else. Hints are also available by watching a rewarded ad.</p>
-
-  <h3>Are the puzzles always solvable?</h3>
-  <p>Yes. Every level ships with a verified solution; no level can reach a dead end that forces a restart.</p>
-
-  <h3>How do I delete my data?</h3>
-  <p>Open <strong>Settings</strong> in the game and tap <strong>Delete My Data</strong>. This permanently erases your saved progress and any Apple ID link — on the device and in the cloud — immediately, with no need to contact us.</p>
-
-  <h2 id="turkce">Türkçe</h2>
-  <p>ExitLine tek kişilik bir bulmaca oyunudur. Oynamak için hesap açmanıza gerek yoktur.</p>
-  <p><strong>Reklamlar devam ediyorsa:</strong> “Remove Ads” satın aldıysanız oyun içi <strong>Settings › Restore Purchases</strong> adımını kullanın; satın alımı yaptığınız Apple ID ile giriş yapmış olduğunuzdan emin olun.</p>
-  <p><strong>İlerlemem kayboldu:</strong> Oyun kaydınız bulutta da tutulur, ama anonim bir kimlikle — ve o kimlik her yeni kurulumda sıfırdan oluştuğu için eski kaydınızı sizinle eşleştiremeyiz. Bunu önlemek için Ayarlar’daki <strong>Save Progress with Apple</strong> seçeneğini kullanın; ilerlemeniz Apple ID’nize bağlanır ve yeniden kurulumda geri gelir.</p>
-  <p><strong>Bir bölümde takıldım:</strong> Oyun çubuğundaki ipucu düğmesi, şu anda çıkabilecek bir çizgiyi bulur ve kamerayı oraya götürür. İpuçları ödüllü reklam izleyerek de alınabilir.</p>
-  <p><strong>Verilerimi silmek istiyorum:</strong> Ayarlar’daki <strong>Delete My Data</strong> seçeneği ilerlemenizi ve Apple ID bağlantınızı kalıcı olarak siler — bize yazmanıza gerek yok.</p>
-  <p><strong>İletişim:</strong> <a href="mailto:dursunaras@gmail.com">dursunaras@gmail.com</a> · <a href="privacy-policy.html">Gizlilik Politikası</a></p>
-
-  <!-- Yayınlandıktan sonra href'e gerçek App Store linkini koy -->
   <div class="store-wrap">
+    <!-- Yayınlandıktan sonra href'e gerçek App Store linkini koy -->
     <a href="#" aria-label="Download ExitLine on the App Store">
       <img src="app-store-badge.png" alt="Download on the App Store">
     </a>
   </div>
 
+  <div class="shots">
+    <figure>
+      <img src="shot-board.png" alt="A rocket-shaped ExitLine board made of arrow lines">
+      <figcaption>Tap a line and it slides out along its arrow.</figcaption>
+    </figure>
+    <figure>
+      <img src="shot-mythology.png" alt="A Mythology world board in ExitLine">
+      <figcaption>Tap the wrong one and it bumps into its neighbour.</figcaption>
+    </figure>
+    <figure>
+      <img src="shot-worlds.png" alt="The five worlds of ExitLine">
+      <figcaption>Five worlds, two hundred levels each.</figcaption>
+    </figure>
+  </div>
+
+  <h2>How it plays</h2>
+  <p>There is no timer and no luck involved. The only question is which line can leave first, and what that opens up for the next one. Tap the wrong one and it bumps into its neighbour and comes back — so the puzzle is in the order, not in your reflexes.</p>
+
+  <ul class="worlds">
+    <li>Galaxy</li><li>Ocean</li><li>Forest</li><li>City</li><li>Mythology</li>
+  </ul>
+
+  <div class="grid">
+    <div class="card">
+      <h3>1000 hand-built levels</h3>
+      <p>Two hundred in each of five worlds. Every board is a real silhouette, not a random grid.</p>
+    </div>
+    <div class="card">
+      <h3>No account, no sign-up</h3>
+      <p>Open it and play. Your progress is saved for you, and you can erase everything in one tap.</p>
+    </div>
+    <div class="card">
+      <h3>Plays offline</h3>
+      <p>Every level ships inside the app. A connection is only needed for ads and purchases.</p>
+    </div>
+    <div class="card">
+      <h3>Made to be looked at</h3>
+      <p>Black ink on paper. No score explosions, no countdowns, no five-second reward loops.</p>
+    </div>
+  </div>
+
+  <h2 id="turkce">Türkçe</h2>
+  <p><strong>ExitLine</strong> bir çizgi bulmaca oyunudur. Her bölüm, oklardan çizilmiş bir siluettir: roket, balina, çam ağacı, yıldırım. Her çizgi tahtayı terk etmek ister ama yalnızca tek bir yöne gidebilir ve önünde hep bir şey vardır.</p>
+  <p>Bir çizgiye dokunduğunuzda okunun yönünde kayıp çıkar. Yanlış olana dokunursanız komşusuna çarpıp geri döner. Süre yok, şans yok — tek soru şu: <em>önce hangisi çıkabilir, ve o çıkınca ne açılır?</em></p>
+  <p>Beş dünya (Galaxy, Ocean, Forest, City, Mythology) ve her birinde 200 bölüm olmak üzere toplam 1000 el yapımı bölüm. Hesap açmak gerekmez, oyun çevrimdışı oynanır.</p>
+  <p><strong>Destek:</strong> <a href="support.html">support sayfası</a> · <strong>İletişim:</strong> <a href="mailto:dursunaras@gmail.com">dursunaras@gmail.com</a></p>
+
   <footer>
     <span>© 2026 Dursun Aras · ExitLine</span>
-    <span><a href="privacy-policy.html">Privacy Policy</a></span>
+    <span><a href="support.html">Support</a> · <a href="privacy-policy.html">Privacy Policy</a></span>
   </footer>
 
 </div>
